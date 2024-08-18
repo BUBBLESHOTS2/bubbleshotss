@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('Imagenes/blog-bg.JPG') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    position: fixed; /* Fija la barra en la parte superior */
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease; /* Transición suave */
+    z-index: 1000; /* Asegura que la barra esté sobre otros contenidos */
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.mosaic-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 160px; /* Aumentar la separación entre imágenes */
+}
+
+.mosaic-item {
+    position: relative;
+    width: 420px; /* Tamaño de las imágenes */
+    height: 420px; /* Tamaño de las imágenes */
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mosaic-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mosaic-item:hover {
+    transform: scale(1.15); /* Aumentar un poco más */
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.mosaic-item:hover img {
+    transform: scale(1.15); /* Aumentar un poco más */
+}
+
+.mosaic-item .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    white-space: nowrap; /* Evitar el salto de línea */
+}
+
+.mosaic-item:hover .text-overlay {
+    transform: translateY(0); /* Despliegue al hacer hover */
+}
+
+.mosaic-item.neon-blue {
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+}
+
+.mosaic-item.neon-purple {
+    box-shadow: 0 0 25px #BA55D3, 0 0 35px #BA55D3, 0 0 45px #BA55D3;
+}
+
+.mosaic-item.neon-white {
+    box-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+}
+
+.socials {
+    text-align: center;
+    padding: 20px;
+}
+
+.socials a {
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.neon-facebook {
+    color: #1877F2;
+    text-shadow: 0 0 8px #1877F2, 0 0 16px #1877F2;
+}
+
+.neon-twitter {
+    color: #1DA1F2;
+    text-shadow: 0 0 8px #1DA1F2, 0 0 16px #1DA1F2;
+}
+
+.neon-instagram {
+    color: #C13584;
+    text-shadow: 0 0 8px #C13584, 0 0 16px #C13584;
+}
+
+.socials a i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.mission-vision-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background: transparent;
+}
+
+.floating-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    width: 45%; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 10px #BA55D3, 0 0 30px #BA55D3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.floating-box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.floating-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 20px #BA55D3, 0 0 40px #BA55D3;
+}
+
+.left-box {
+    text-align: left;
+}
+
+.right-box {
+    text-align: right;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #BA55D3;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #BA55D3;
+}
+
+.floating-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.catalog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.images-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre las imágenes y el título */
+}
+
+.catalog-title-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; /* Espacio alrededor del título */
+}
+
+.catalog-title {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 5px #000, 0 0 10px #000;
+}
+
+.catalog-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.catalog-content {
+    width: calc(100% - 80px); /* Resta el ancho de las flechas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.catalog-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+/* Estilo base para las tarjetas de producto */
+.product-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px; /* Ancho aumentado */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 30px; /* Espaciado aumentado */
+}
+
+/* Efecto al pasar el cursor sobre el producto */
+.product-card:hover {
+    z-index: 1; /* Asegura que el producto se coloque encima de los demás */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7); /* Agrega un resplandor adicional */
+}
+
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.catalog-container .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.catalog-container .left-btn {
+    left: 0;
+}
+
+.catalog-container .right-btn {
+    right: 0;
+}
+
+.catalog-container .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.whatsapp-icon {
+    font-size: 40px;
+    color: #25D366; /* Color verde neón para el ícono de WhatsApp */
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #25D366, 0 0 10px #25D366, 0 0 20px #25D366;
+}
+
+.info-title-container {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0; /* Espacio alrededor del título */
+}
+
+.info-title {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 5px #000, 0 0 10px #000;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00FFFF; /* Azul neón */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #00BFFF; /* Azul más oscuro para el hover */
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF;
+    transform: scale(1.1);
+}
+
+/* Estilos para la pantalla de carga */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegurarse de que esté por encima del contenido */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.3s ease;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #00FFFF; /* Azul neón */
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+.loading-content p {
+    font-size: 1.5em;
+    color: #f0f0f0;
+}
+
+/* Ocultar la pantalla de carga cuando se ha cargado la página */
+.loaded .loading-screen {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+    margin: 0;
+}
+
+.cursor-follow {
+    position: fixed;
+    border: 4px solid #00FFFF; /* Color del borde en neón azul */
+    border-radius: 50%; /* Hacer que sea un círculo */
+    width: 30px; /* Tamaño del círculo */
+    height: 30px; /* Tamaño del círculo */
+    pointer-events: none; /* Asegura que no interfiera con los clics del mouse */
+    mix-blend-mode: difference; /* Asegura que el círculo sea visible en cualquier fondo */
+    transition: transform 0.1s ease; /* Suaviza el movimiento */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+
+
+
+
