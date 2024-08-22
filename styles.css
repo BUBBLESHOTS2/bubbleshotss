@@ -40,9 +40,21 @@ body {
 
 
 .hero {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background: url('ruta/a/tu/fondo.jpg') no-repeat center center; /* Fondo opcional */
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el contenedor */
     text-align: center;
-    padding: 100px 20px;
 }
+
+/* Estilo para el logo dentro de la sección hero */
+.hero-logo {
+    max-width: 40%; /* Ajusta el tamaño del logo para que no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
 
 .mosaic-gallery {
     display: flex;
@@ -53,8 +65,8 @@ body {
 
 .mosaic-item {
     position: relative;
-    width: 420px; /* Tamaño de las imágenes */
-    height: 420px; /* Tamaño de las imágenes */
+    width: 320px; /* Tamaño de las imágenes */
+    height: 320px; /* Tamaño de las imágenes */
     overflow: hidden;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -87,11 +99,11 @@ body {
     border-radius: 5px;
     transform: translateY(100%);
     transition: transform 0.3s ease;
-    white-space: nowrap; /* Evitar el salto de línea */
+   
 }
 
 .mosaic-item:hover .text-overlay {
-    transform: translateY(0); /* Despliegue al hacer hover */
+    transform: translateY(0); 
 }
 
 .mosaic-item.neon-blue {
@@ -304,6 +316,10 @@ body {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whatsapp-icon:hover {
@@ -413,6 +429,111 @@ body {
     mix-blend-mode: difference; /* Asegura que el círculo sea visible en cualquier fondo */
     transition: transform 0.1s ease; /* Suaviza el movimiento */
     z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+/* Estilo para los contenedores del acordeón */
+.accordion-container {
+    background-color: rgba(0, 0, 0, 0.086); /* Fondo semitransparente para el contenedor */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 2px solid #ff00ffa4; /* Borde azul neón */
+}
+
+/* Estilo para los botones del acordeón */
+.accordion {
+    background-color: rgba(0, 0, 0, 0.134); /* Fondo morado neón */
+    color: #fff; /* Texto blanco */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #9B59B6; /* Brillo neón morado */
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.accordion-title {
+    background-color: rgba(0, 0, 0, 0.134); /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-title:hover {
+    background-color: rgba(162, 0, 255, 0.363); /* Fondo azul neón al pasar el ratón */
+    color: #000; /* Texto negro */
+}
+
+.accordion-content {
+    background-color: rgba(0, 0, 0, 0.134); /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px;
+    display: none; /* Oculta el contenido inicialmente */
+    transition: max-height 0.3s ease-out;
+    max-height: 0; /* Ajusta la altura máxima inicialmente */
+    overflow: hidden;
+    border-top: 2px solid rgba(238, 0, 255, 0.23); /* Borde superior azul neón */
+}
+
+/* Estilo para el contenido desplegado */
+.accordion.active .accordion-content {
+    display: block;
+    max-height: 500px; /* Ajusta la altura máxima cuando está desplegado */
+}
+
+/* Panel que contiene el contenido desplegable */
+.panel {
+    padding: 15px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más transparente para el contenido */
+    color: #fff; /* Texto blanco */
+    font-size: 25px;
+}
+
+/* Contenedor para centrar la imagen */
+.image-container {
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en su propio contenedor */
+    margin-bottom: 15px; /* Espacio debajo del contenedor de la imagen */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del panel */
+    display: flex; /* Hace que las imágenes se alineen horizontalmente */
+    justify-content: center; /* Centra las imágenes dentro del contenedor */
+    gap:  80px;
+}
+
+/* Estilo para las imágenes dentro de las secciones */
+.image-container img {
+    max-width: 25%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    box-shadow: 0 0 8px #BA55D3, 0 0 35px #BA55D3, 0 0 45px #BA55D3;
+    border-radius: 8px; /* Borde redondeado */
+    margin-top: 10px;
+}
+
+/* Información dentro del acordeón */
+.info {
+    margin-top: 20px; /* Espacio encima de la información */
+}
+
+/* Lista dentro del acordeón */
+.info ul {
+    list-style-type: disc; /* Estilo de lista con puntos */
+    padding-left: 20px; /* Espacio a la izquierda de la lista */
+}
+
+/* Estilo de cada elemento de la lista */
+.info li {
+    margin-bottom: 10px; /* Espacio debajo de cada elemento de la lista */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo de los títulos dentro del acordeón */
+.info h3 {
+    margin-top: 20px; /* Espacio encima de los títulos */
+    font-size: 20px; /* Tamaño de fuente para los títulos */
+    color: #fff; /* Color del texto de los títulos */
 }
 
 
