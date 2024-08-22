@@ -6,37 +6,40 @@
     <title>BUBBLESHOTS </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="icon" href="Imagenes/logo.png" type="image/x-icon">
 </head>
 <body>
+ 
     <div id="cursor-follow" class="cursor-follow"></div>
-    <link rel="icon" href="Imagenes/Logo.png" type="image/x-icon">
+    
     <div class="navbar">
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
             <li><a href="#informacion">Información</a></li>
         </ul>
+        
     </div>
     
 
     <div id="inicio" class="hero">
-        <h1>BUBBLESHOTS</h1>
+        <img src="Imagenes/logo.png" alt="Logo de BUBBLESHOTS" class="hero-logo">
+        <!-- Puedes mantener el párrafo en caso de que quieras agregar más contenido en el futuro -->
         <p></p>
-    </div>
+    </div>    
 
     <div class="mosaic-gallery">
         <div class="mosaic-item neon-blue">
             <img src="Imagenes/bar.jpg" alt="Imagen 1">
-            <div class="text-overlay">Descubre la magia de los cócteles esferificados: una experiencia sensorial revolucionaria. </div>
+            <div class="text-overlay">Cócteles encapsulados dentro de una fina membrana comestible que está hecha a partir de extractos de algas marinas. Son el factor diferencial  que tu evento necesita para captar e impresionar a tus invitados </div>
         </div>
         <div class="mosaic-item neon-purple">
             <img src="Imagenes/Esferas.jpg" alt="Imagen 2">
-            <div class="text-overlay">Explora nuestra innovadora gama de cócteles esferificados que desafían las expectativas tradicionales.</div>
+            <div class="text-overlay">Bolitas llenas de cócteles que al hacerles presión contra el paladar, liberan su contenido de una forma espectacular y a la vez generan en las personas un efecto de alegría y felicidad. </div>
         </div>
         <div class="mosaic-item neon-white">
             <img src="Imagenes/molecular.jpg" alt="Imagen 3">
-            <div class="text-overlay">Descubre las esferas de cócteles que transforman la forma en que experimentas el sabor.</div>
+            <div class="text-overlay">Son la innovación perfecta para ser diferente a los demás.</div>
         </div>
     </div>
     <div class="catalog-title-container">
@@ -47,8 +50,9 @@
         <div class="catalog-carousel">
             <div class="product-card">
                 <img src="Imagenes/pearls.png" alt="Producto 1">
-                <h3>Nombre del Producto 1</h3>
-                <p class="product-description">Descripción breve del producto 1.</p>
+                <h3>Smirnoff Clasico</h3>
+                <p class="product-description">Los clasicos de Smirnoff con su nueva presentación</p>
+                <p class="valor">$20.000.</p>
                 <div class="quantity-wrapper">
                     <label for="quantity1">Cantidad:</label>
                     <input type="number" id="quantity1" name="quantity1" min="1" value="1">
@@ -60,8 +64,9 @@
     
             <div class="product-card">
                 <img src="Imagenes/Esferaverde.jpg" alt="Producto 2">
-                <h3>Nombre del Producto 2</h3>
-                <p class="product-description">Descripción breve del producto 2.</p>
+                <h3>Smirnoff Manzana Verde</h3>
+                <p class="product-description">Smirfnoff manzana verde. Una explosión en tu boca</p>
+                <p class="valor">$20.000.</p>
                 <div class="quantity-wrapper">
                     <label for="quantity2">Cantidad:</label>
                     <input type="number" id="quantity2" name="quantity2" min="1" value="1">
@@ -72,8 +77,9 @@
             </div>
             <div class="product-card">
                 <img src="Imagenes/EsferaAzul.jpg.crdownload" alt="Producto 3">
-                <h3>Nombre del Producto 3</h3>
-                <p class="product-description">Descripción breve del producto 2.</p>
+                <h3>Smirnoff blueberry</h3>
+                <p class="product-description">Nuevo sabor de Smirfnoff</p>
+                <p class="valor">$20.000.</p>
                 <div class="quantity-wrapper">
                     <label for="quantity2">Cantidad:</label>
                     <input type="number" id="quantity2" name="quantity2" min="1" value="1">
@@ -84,8 +90,9 @@
             </div>
             <div class="product-card">
                 <img src="Imagenes/EsferaNaranja.jpg" alt="Producto 2">
-                <h3>Nombre del Producto 4</h3>
-                <p class="product-description">Descripción breve del producto 4.</p>
+                <h3>Smirnoff naranja</h3>
+                <p class="product-description">Vodka con esencia de naranja.</p>
+                <p class="valor">$20.000.</p>
                 <div class="quantity-wrapper">
                     <label for="quantity2">Cantidad:</label>
                     <input type="number" id="quantity2" name="quantity2" min="1" value="1">
@@ -98,6 +105,7 @@
                 <img src="Imagenes/pearls.png" alt="Producto 2">
                 <h3>Nombre del Producto 5</h3>
                 <p class="product-description">Descripción breve del producto 5.</p>
+                <p class="valor">$20.000.</p>
                 <div class="quantity-wrapper">
                     <label for="quantity2">Cantidad:</label>
                     <input type="number" id="quantity2" name="quantity2" min="1" value="1">
@@ -127,8 +135,144 @@
             <p>Ser la empresa líder en coctelería molecular a nivel internacional, reconocida por nuestra creatividad, excelencia y capacidad para sorprender a nuestros clientes. Aspiramos a redefinir la cultura del consumo de bebidas, elevando los estándares de la coctelería mediante la continua innovación y la expansión de nuestra marca a nuevos mercados, siempre manteniendo un enfoque sostenible y ético en nuestras operaciones.</p>
         </div>
     </div>
+
+    <div class="accordion-container">
+        <div class="accordion">
+            <h2 class="accordion-title">NORMATITIVIDAD</h2>
+            <div class="accordion-content">
+                <div class="panel">
+                    <!-- Imagen centrada -->
+                    <div class="image-container">
+                        <img src="Imagenes/invima.webp" alt="Imagen de Sección 1">
+                        <img src="Imagenes/bpm.jpg" alt="Imagen de Sección 1">
+                    </div>
+                    <!-- Información detallada -->
+                    <div class="info">
+                        <h3>Información del Producto</h3>
+                    </div>
+                    <p><strong>Certificaciones y Cumplimientos</strong></p>
+                    <p>BubbleShots cuenta con el certificado Buenas Prácticas de Manufactura (BPM) y el registro sanitario, los cuales son expedidos por INVIMA.</p>
+                    <p>Este Certificado BPM garantiza que el producto cumple con los requisitos sanitarios en todas las etapas de su producción, incluyendo fabricación, elaboración, hidratación, envase, almacenamiento, distribución, transportación, comercialización, expendio e importación.</p>
+                    <p>BubbleShots cumple con la normatividad de los decretos 1686 de 2012 y 1506 de 2014, además de la ley 9 de 1979.</p>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <div class="socials">
+    <div class="accordion">
+        <h2 class="accordion-title">CLASIFICACIÓN DEL PRODUCTO</h2>
+        <div class="accordion-content">
+            <div class="panel">
+                <!-- Contenedor para la imagen, opcional -->
+                <div class="image-container">
+                    <img src="Imagenes/cajaetiqueta.png" alt="Imagen de Sección 1">
+                    <img src="Imagenes/empaques.jpg" alt="Imagen de Sección 1">
+                </div>
+                <p><strong>Clasificación del Producto:</strong></p>
+                <ol>
+                    <li><strong>Tangibilidad:</strong> Producto Tangible: Las burbujas de cóctel esferificadas son un producto tangible, ya que se trata de un bien físico que los consumidores pueden ver, tocar, y consumir.</li>
+                    <li><strong>Uso:</strong> Producto de Consumo: Este producto está destinado al consumidor final para su disfrute personal, por lo que se clasifica como un producto de consumo. No está diseñado para ser utilizado en la producción de otros bienes o servicios, sino para ser consumido directamente.</li>
+                    <li><strong>Durabilidad:</strong> Producto Perecedero: Dado que las burbujas de cóctel contienen ingredientes frescos, como mezclas líquidas de bebidas alcohólicas, y están hechas de un material biodegradable, se clasifica como un producto perecedero. Esto implica que tiene una vida útil limitada y debe consumirse dentro de un periodo específico para mantener su calidad y seguridad.</li>
+                    <li><strong>Naturaleza:</strong> Bien de Consumo: Las burbujas de cóctel esferificadas son bienes de consumo, ya que están destinados a ser utilizados y disfrutados por los consumidores finales. No se utilizan en la producción de otros bienes ni como parte de un proceso industrial.</li>
+                    <li><strong>Demanda:</strong> Demanda Estacional: Aunque podría tener demanda durante todo el año, es probable que la demanda de este producto sea mayor en ciertas épocas, como temporadas festivas, eventos especiales, o durante el verano cuando el consumo de cócteles es más común. Esto lo clasifica como un producto de demanda estacional, aunque puede tener un flujo continuo de ventas en menor escala fuera de estas temporadas.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+        <div class="accordion">
+            <h2 class="accordion-title">SEGMENTACIÓN</h2>
+            <div class="accordion-content">
+                <div class="panel">
+                    <!-- Contenedor para la imagen, opcional -->
+                    <div class="image-container">
+                        <img src="Imagenes/personas.jpg"alt="Imagen de Sección 2">
+                    </div>
+                    <p><strong>Segmentación Demográfica</strong></p>
+                    <p><strong>Edad:</strong></p>
+                    <ul>
+                        <li><strong>Adultos Jóvenes (21-35 años):</strong> Consumidores que buscan experiencias nuevas y emocionantes, especialmente en el ámbito de la vida nocturna y las reuniones sociales. Están dispuestos a experimentar con productos innovadores y exclusivos.</li>
+                        <li><strong>Adultos (35-50 años):</strong> Consumidores que aprecian la calidad y el lujo en sus elecciones de bebida, a menudo con un mayor poder adquisitivo. Pueden estar interesados en productos que ofrezcan una experiencia sofisticada y única.</li>
+                    </ul>
+                    <p><strong>Segmentación Psicográfica</strong></p>
+                    <ul>
+                        <li>Consumidores que valoran la responsabilidad ambiental y prefieren productos que utilicen materiales biodegradables y prácticas sostenibles en su producción.</li>
+                        <li>Aquellos que buscan productos que mejoren sus experiencias sociales, ya sea en fiestas, eventos o reuniones, valorando productos que ofrezcan un elemento sorpresa o diversión.</li>
+                    </ul>
+                    <p><strong>Segmentación Geográfica</strong></p>
+                    <ul>
+                        <li><strong>Ubicación:</strong></li>
+                        <li><strong>Zonas Urbanas:</strong> Ciudades principales y áreas metropolitanas donde la cultura de bares y la vida nocturna están bien desarrolladas.</li>
+                        <li><strong>Regiones Turísticas:</strong> Destinos turísticos que atraen a un público que busca experiencias únicas y productos exclusivos, como destinos de playa o ciudades con una vida nocturna vibrante.</li>
+                    </ul>
+                    <p><strong>Segmentación Conductual</strong></p>
+                    <ul>
+                        <li><strong>Ocasión de Uso:</strong></li>
+                        <li><strong>Eventos Especiales:</strong> Bodas, fiestas temáticas, eventos corporativos y celebraciones donde los organizadores buscan ofrecer algo distinto y memorable.</li>
+                        <li><strong>Vida Nocturna:</strong> Bares, discotecas y lounges que buscan destacar ofreciendo bebidas innovadoras y atractivas para su clientela.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <h2 class="accordion-title">ATRIBUTOS DEL PRODUCTO</h2>
+            <div class="accordion-content">
+                <div class="panel">
+                    <!-- Contenedor para la imagen, opcional -->
+                    <div class="image-container">
+                        <img src="Imagenes/prueba.webp" alt="Imagen de Sección 1">
+                    </div>
+                    <p><strong>DEFINICIÓN DE ATRIBUTOS DEL PRODUCTO</strong></p>
+                    <p><strong>1. Atributos Físicos</strong></p>
+                    <ul>
+                        <li><strong>Tamaño:</strong> Cada cápsula tiene un tamaño aproximado un poco menor al de una pelota de ping pong.</li>
+                        <li><strong>Forma:</strong> Esférica, diseñada para facilitar el consumo de un solo bocado.</li>
+                        <li><strong>Peso:</strong> 10 gramos</li>
+                        <li><strong>Diámetro perla:</strong> 30 mm</li>
+                        <li><strong>Color:</strong> Transparente o con tonalidades sutiles que reflejan el contenido del cóctel.</li>
+                    </ul>
+                    <p><strong>2. Atributos Técnicos</strong></p>
+                    <ul>
+                        <li><strong>Composición de la cápsula:</strong> Fabricada con alginato de sodio derivado de algas marinas, 100% biodegradable y comestible.</li>
+                        <li><strong>Contenido de Alcohol:</strong> 20°</li>
+                        <li><strong>Durabilidad:</strong> Alta estabilidad en almacenamiento, no requiere refrigeración.</li>
+                        <li><strong>Compatibilidad alimentaria:</strong> Libre de alérgenos, sin ingredientes de origen animal, apto para veganos y personas con dietas especiales.</li>
+                        <li><strong>Método de esferificación avanzada:</strong> La cápsula está diseñada para mantener la integridad del cóctel durante el almacenamiento y transporte, evitando filtraciones o rupturas.</li>
+                    </ul>
+                    <p><strong>3. Atributos Funcionales</strong></p>
+                    <ul>
+                        <li><strong>Empaque práctico y ecológico:</strong> Las cápsulas se pueden empacar en envases reciclables, lo que refuerza el compromiso con la sostenibilidad.</li>
+                        <li><strong>Unidades individuales o paquetes:</strong> Disponibilidad en presentaciones individuales o en paquetes, adaptándose a diferentes necesidades de consumo.</li>
+                        <li><strong>Fácil manipulación y producto listo para consumir:</strong> No requiere preparación adicional, lo que lo hace ideal para cualquier ocasión, desde fiestas hasta cenas formales. No requiere mezcladores, hielo o vasos, lo que lo convierte en un producto listo para consumir en cualquier momento y lugar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="accordion-title">CICLO DE VIDA DEL PRODUCTO</h2>
+            <div class="accordion-content">
+                <div class="panel">
+                    <!-- Contenedor para la imagen, opcional -->
+                    <div class="image-container">
+                        <img src="Imagenes/ciclo.jpg" alt="Imagen de Sección 1">
+                    </div>
+                    <p><strong>Ciclo de Vida del Producto</strong></p>
+                    <ol>
+                        <li><strong>Introducción:</strong> En la fase de introducción, el foco principal está en establecer el producto en el mercado y crear conocimiento entre los consumidores. En términos de marketing, se diseña una estrategia que resalta la innovación y exclusividad del producto. Las actividades promocionales pueden incluir lanzamientos en eventos de alto perfil, degustaciones exclusivas, y colaboraciones con influencers del sector gastronómico. La logística se parametriza para garantizar que el empaque sea atractivo y funcional.</li>
+                        <li><strong>Crecimiento:</strong> Durante la fase de crecimiento, la demanda por las burbujas de cóctel esferificadas comienza a aumentar, lo que requiere una escalabilidad en la producción. Es crucial optimizar los procesos de fabricación para mantener la calidad mientras se incrementa la cantidad. La estrategia de marketing se amplía, enfocándose en la penetración en nuevos mercados y la diversificación de canales de distribución, tiendas, plataformas en línea, y bares exclusivos. Además, se evalúa y ajusta la política de precios para mantener la competitividad frente a posibles nuevos entrantes al mercado.</li>
+                        <li><strong>Madurez:</strong> En la fase de madurez, el crecimiento en ventas se estabiliza, y el enfoque se traslada a la optimización de costos y la maximización de los márgenes de ganancia. Aquí, la producción está completamente optimizada, y cualquier reducción en costos se realiza sin sacrificar la calidad del producto. Se despliegan campañas de fidelización para retener a los clientes leales y mantener el producto relevante. También se exploran oportunidades para reposicionar el producto o ingresar a nuevos segmentos de mercado, como colaboraciones con marcas de lujo o eventos temáticos.</li>
+                        <li><strong>Declive:</strong> En la fase de declive, las ventas comienzan a disminuir, lo que exige una evaluación cuidadosa de la viabilidad continua del producto. Las estrategias de precios incluyen descuentos significativos y promociones de liquidación para agotar el inventario restante. También se puede explorar un posible rebranding o reformulación del producto si existe potencial para reposicionarlo en el mercado.       </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+                
+        <!-- Añade más acordeones según sea necesario -->
+      </div>
+      <div class="socials">
         <a href="https://facebook.com" class="neon-facebook"><i class="fab fa-facebook"></i></a>
         <a href="https://twitter.com" class="neon-twitter"><i class="fab fa-twitter"></i></a>
         <a href="https://instagram.com" class="neon-instagram"><i class="fab fa-instagram"></i></a>
